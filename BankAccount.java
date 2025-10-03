@@ -8,7 +8,11 @@ public class BankAccount {
         this.accountHolderName = name;
         this.balance = initialBalance;
     }
+  public int getAccountNumber() {
+        return accountNumber;
+    }
 
+    
     public void deposit(double amount) {
         balance += amount;
     }
