@@ -18,5 +18,14 @@ public class Bank {
     }
     return null;
 }
-
+ public void showAllAccounts() {
+        if (accounts.isEmpty()) {
+            System.out.println("No accounts found in the bank.");
+        } else {
+            for (BankAccount account : accounts) {
+                account.showAccountDetails(); 
+                System.out.println("---------------");
+            }
+        }
+    }
 }
